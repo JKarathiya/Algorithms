@@ -1,18 +1,19 @@
-using System.Linq;
+using System;
 public class Solution
 {
     public int CalculatePascalLayerTotal(int layer)
     {
         if (layer < 0) return -1;
 
-        int[] arr = new int[layer + 1];
-        int total = 0;
+        long result = 0;
+        long total = 0;
+
         for (int i = 0; i <= layer; i++)
         {
             total = (layer == i || i == 0) ? 1 : total * (layer - i + 1) / i;
-            arr[i] = total;
+            result += (int)total;
         }
 
-        return arr.Sum();
+        return (result <= Int32.MaxValue ? (int)result : -1);
     }
 }

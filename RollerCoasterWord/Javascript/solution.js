@@ -1,5 +1,9 @@
 function rollercoasterWord(input) {
+
+    if (input.Length == 1) return true;
+
     let word = input.toLowerCase();
+
     for (let i = 0; i < word.length - 2; i++) {
         let a = word[i],
             b = word[i + 1],

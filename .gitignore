@@ -16,3 +16,15 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+#test files
+*.dtbcache.v2
+000.testlog
+testlog.manifest
