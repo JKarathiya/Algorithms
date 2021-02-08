@@ -2,13 +2,13 @@ function run(unsortedInput) {
     try {
         let strArray = unsortedInput.split(" ").map((char) => {
             let num = parseInt(char, 10);
-            if (!isNumber(num)) {
+            if (isNaN(num) && !isFinite(num)) {
                 throw "Error with sorting";
             }
             return num;
         });
 
-        let sortedOutput = strArray.sort((a, b) => { return a - b })
+        let sortedOutput = strArray.sort((a, b) => a - b)
         return sortedOutput.join(" ");
     }
     catch (err) {
@@ -16,7 +16,4 @@ function run(unsortedInput) {
     }
 }
 
-function isNumber(n) {
-    return !isNaN(parseFloat(n)) && isFinite(n);
-}
 module.exports = run;
