@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace FindMaxWords
+namespace HowManyFlips
 {
     public class SolutionTests
     {
@@ -11,13 +11,13 @@ namespace FindMaxWords
             _solution = new Solution();
         }
 
+        [InlineData("01011", 3)]
+        [InlineData("0011", 1)]
         [Theory]
-        [InlineData("We test coders. Give us a try?", 4)]
-        [InlineData("Forget Cvs..Save time . x x", 2)]
-        public void FindMaxWords_Sentence_Result(string input, int expected)
+        public void HowManyFlips_ForInputes_ReturnsExpectedResult(string input, int expected)
         {
             // act
-            var result = _solution.FindMaxWords(input);
+            var result = _solution.HowManyFlips(input);
 
             // assert
             Assert.Equal(expected, result);

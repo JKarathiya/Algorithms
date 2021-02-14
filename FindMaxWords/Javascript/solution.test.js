@@ -1,12 +1,12 @@
 const findMaxWords = require("./solution");
 
-describe("Calculate Pascal Layer Total", function () {
+describe("Find Max words", function () {
 
-    test("Check that a short rollercoaster word returns true.", () => {
+    test("Test Case: 0", () => {
         expect(findMaxWords("We test coders. Give us a try?")).toBe(4);
     });
 
-    test("Check that a short non-rollercoaster word returns false.", () => {
+    test("Test Case: 1", () => {
         expect(findMaxWords('Forget Cvs..Save time . x x')).toBe(2);
     });
 })
