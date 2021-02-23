@@ -14,5 +14,3 @@ Assume that:
 - the length of the string S is within the range [2..27];
 - string S consists only of lowercase letters(a-z);
 - all letters in S are distinct except one, which occurs twice.
-
-In your solution, focus on correctness, The performance of your solution will not be the focus of the assessment.
