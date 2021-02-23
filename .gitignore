@@ -16,6 +16,7 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+.vscode
 
 # User-specific files
 *.rsuser
