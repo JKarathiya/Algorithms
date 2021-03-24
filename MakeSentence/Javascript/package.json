@@ -1,0 +1,23 @@
+{
+  "name": "makesentence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solution.js",
+  "scripts": {
+    "build": "tsc --build",
+    "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet --fix",
+    "test": "jest **/*.test.ts"
+  },
+  "author": "Jayesh",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.21",
+    "@types/node": "^14.14.35",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
+  }
+}
